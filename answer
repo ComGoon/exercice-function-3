@@ -1,0 +1,37 @@
+//Author: Oussoumane Mahaman Madani (GoMyC{}de)
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: comgoon
+ * Date: 8/10/18
+ * Time: 12:35 PM
+ */
+
+function myArr($tab){  //the function takes an array as parameter
+
+
+    for ($i = 0; $i < sizeof($tab); $i++){ //interating through the elements of the array
+
+        if ($tab[$i] % 2 === 0){  //checking if the element is odd or not
+            $tabPair[] = $tab[$i] ; //builing the array with solely odd elements
+        }else{
+            $tabImpair [] = $tab[$i];  //builing the array with solely even elements
+        }
+    }
+
+
+    print_r($tab); //printing out the array entered in parameter
+    echo "<br><br>";
+
+    print_r($tabPair);  //printing out the odd array
+    echo "<br><br>";
+
+    print_r($tabImpair); //printing out the even array
+
+
+}
+
+myArr([-3, 60, 2, 5, 6, 7, 7, 13 ,7, 2, 10, 11, -1, 4]); //calling the function for testing
+
+
